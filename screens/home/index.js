@@ -2,7 +2,7 @@ import { SafeAreaView, View, StyleSheet } from 'react-native';
 import { COLORS } from '../../constants/colors';
 import SearchSection from './searchSection';
 import ListSection from './listSection';
-import NewsSection from './newsSection';
+import NewsSection from './newsSetion';
 
 export default function HomeScreen() {
   return (
