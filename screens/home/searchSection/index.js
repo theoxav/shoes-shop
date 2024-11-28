@@ -1,10 +1,11 @@
 import { View, StyleSheet } from 'react-native';
 import SearchInput from '../../../ui/components/inputs/SearchInput';
 import { useState } from 'react';
-import { SPACES } from '../../../constants/spaces';
+import BrandsList from './components/BrandsList';
 
 export default function SearchSection() {
   const [inputValue, setInputValue] = useState('');
+
   return (
     <View style={styles.container}>
       <SearchInput
@@ -12,6 +13,7 @@ export default function SearchSection() {
         value={inputValue}
         onChangeText={setInputValue}
       />
+      <BrandsList />
     </View>
   );
 }
@@ -20,6 +22,6 @@ const styles = StyleSheet.create({
   container: {
     borderWidth: 1,
     flex: 120,
-    paddingTop: SPACES.S,
+    justifyContent: 'space-evenly',
   },
 });
