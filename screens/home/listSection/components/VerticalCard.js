@@ -42,14 +42,14 @@ const styles = StyleSheet.create({
     padding: SPACES.S,
   },
   image: {
-    width: '100%',
-    height: '100%',
+    width: 150,
+    height: 150,
     transform: [
       {
         rotate: '-20deg',
       },
       { translateX: -SPACES.S },
-      { translateY: SPACES.S },
+      { translateY: -SPACES.S },
     ],
   },
   descriptionContainer: {

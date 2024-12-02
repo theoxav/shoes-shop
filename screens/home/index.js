@@ -1,12 +1,13 @@
-import { View, StyleSheet, ScrollView } from 'react-native';
+import { StyleSheet, ScrollView, SafeAreaView, StatusBar } from 'react-native';
 import { COLORS } from '../../constants/colors';
 import SearchSection from './searchSection';
 import ListSection from './listSection';
-import NewsSection from './newsSetion';
+import NewsSection from './newsSection';
 
 export default function HomeScreen() {
   return (
-    <View style={[styles.container]}>
+    <SafeAreaView style={[styles.container]}>
+      <StatusBar />
       <ScrollView
         contentContainerStyle={styles.scrollViewContainer}
         bounces={false}
@@ -15,7 +16,7 @@ export default function HomeScreen() {
         <ListSection />
         <NewsSection />
       </ScrollView>
-    </View>
+    </SafeAreaView>
   );
 }
 
